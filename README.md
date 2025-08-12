@@ -38,5 +38,12 @@ python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\Act
 
 pip install -r requirements.txt
 
+### Enable Local LLM (optional)
+1) Install Ollama: https://ollama.com  
+2) Pull a model:
+```bash
+ollama pull mistral   # or: ollama pull llama3
+
+
 # run (module mode avoids import issues)
 python -m app.app
