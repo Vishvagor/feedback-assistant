@@ -1,12 +1,13 @@
-# Feedback Assistant(LLM ready,offline) — Summaries, Sentiment, and Next Actions (No API Keys)
+# Feedback Assistant — Offline + Local LLM (No API Keys)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![CI](https://github.com/Vishvagor/llm-feedback-assistant/actions/workflows/smoke.yml/badge.svg)](../../actions/workflows/smoke.yml)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 
-**What it is:** A lightweight Gradio app that turns raw feedback into **key themes**, a quick **sentiment** tally (👍/👎), and **suggested actions** — all **offline**, with **no API keys**.
+Turns raw feedback into **key themes**, **sentiment (👍/👎)**, and **next actions**.  
+Runs fully **offline** by default (fast heuristics). Optionally switch to a **local LLM via Ollama**—still **no API keys** or cloud dependencies.
 
-**Why it matters:** This maps directly to VOC/CX/support workflows. It’s pragmatic and demo-safe (no cloud dependencies), perfect for a portfolio or a quick internal tool.
+> **Use cases:** VOC/CX reviews, support ticket triage, product reviews, course surveys.
 
 ---
 
@@ -15,6 +16,14 @@
 > Replace with a real screenshot from your machine.
 
 <img src="assets/screenshot.png" width="900" alt="App screenshot" />
+<img src="assets/ss_ollama.png" width="900" alt="App screenshot" />
+
+---
+
+## Modes
+
+- **Offline heuristics (default)** — fast, deterministic, keyless; robust on messy files.  
+- **Local LLM (Ollama)** — richer summaries on-device (e.g., `mistral`, `llama3`); privacy-preserving and still keyless.
 
 ---
 
@@ -24,8 +33,8 @@
 git clone https://github.com/Vishvagor/llm-feedback-assistant
 cd llm-feedback-assistant
 
-# (optional) create a virtual env
-python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\Activate
+# (optional) virtual env
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\Activate
 
 pip install -r requirements.txt
 
