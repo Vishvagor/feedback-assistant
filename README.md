@@ -1,7 +1,7 @@
 # Feedback Assistant — Offline + Local LLM (No API Keys)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CI](https://github.com/Vishvagor/feedback-assistant/actions/workflows/smoke.yml/badge.svg)](../../actions/workflows/smoke.yml)
+
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 
 Turns raw feedback into **key themes**, **sentiment (👍/👎)**, and **next actions**.  
