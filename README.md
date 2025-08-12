@@ -1,4 +1,4 @@
-# LLM Feedback Assistant — Summaries, Sentiment, and Next Actions (No API Keys)
+# Feedback Assistant(LLM ready,offline) — Summaries, Sentiment, and Next Actions (No API Keys)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![CI](https://github.com/Vishvagor/llm-feedback-assistant/actions/workflows/smoke.yml/badge.svg)](../../actions/workflows/smoke.yml)
